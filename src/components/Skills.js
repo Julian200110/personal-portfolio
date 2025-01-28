@@ -9,6 +9,8 @@ import java from "../assets/img/java.png";
 import mongo from "../assets/img/mongo-db.png";
 import mysql from "../assets/img/mysql.png";
 import c from "../assets/img/c-language.png";
+import AWS from "../assets/img/amazon-web-services.png";
+import BI from "../assets/img/BI.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import arrow1 from "../assets/img/arrow1.svg";
@@ -90,8 +92,16 @@ export const Skills = () => {
                   <h5>Mysql</h5>
                 </div>
                 <div className="item">
+                  <img src={AWS} alt="Image" />
+                  <h5>AWS</h5>
+                </div>
+                <div className="item">
                   <img src={c} alt="Image" />
                   <h5>c++</h5>
+                </div>
+                <div className="item">
+                  <img src={BI} alt="Image" />
+                  <h5>Power BI</h5>
                 </div>
               </Carousel>
             </div>

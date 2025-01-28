@@ -40,7 +40,7 @@ export const Contact = () => {
         formDetails,
         publicKey
       );
-      setButtonText("Enviar");
+      setButtonText("Send");
       setFormDetails(formInitialDetails);
       if (response.status === 200) {
         setStatus({ success: true, message: "Email sent successfully" });
