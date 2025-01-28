@@ -7,10 +7,10 @@ import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
   function handleDownload() {
-    const pdfUrl = "./archivo.pdf"; // Reemplaza esto con la URL real del archivo PDF
+    const pdfUrl = "./CV Julian Vanegas.pdf"; // Reemplaza esto con la URL real del archivo PDF
     const link = document.createElement("a");
     link.href = pdfUrl;
-    link.setAttribute("download", "mi_cv.pdf"); // Nombre del archivo al descargar
+    link.setAttribute("download", "CV Julian Vanegas.pdf"); // Nombre del archivo al descargar
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
