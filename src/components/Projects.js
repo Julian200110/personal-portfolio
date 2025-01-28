@@ -24,7 +24,7 @@ export const Projects = () => {
         <>
           Weed-Removing Robot for Vegetable Gardens
           <br />
-          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+          <span style={{ textDecoration: "underline" }}>
             C, Dart, MATLAB, Solidworks
           </span>
         </>
@@ -38,7 +38,7 @@ export const Projects = () => {
         <>
           Brewery Plant Simulation
           <br />
-          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+          <span style={{ textDecoration: "underline" }}>
             C, Javascript, React, Node.js
           </span>
         </>
@@ -52,7 +52,7 @@ export const Projects = () => {
         <>
           Habidd web application
           <br />
-          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+          <span style={{ textDecoration: "underline" }}>
             JavaScript, React, Figma
           </span>
         </>
@@ -66,7 +66,7 @@ export const Projects = () => {
         <>
           Conveyor Belt System
           <br />
-          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+          <span style={{ textDecoration: "underline" }}>
             C, Unity, TIA PORTAL
           </span>
         </>
@@ -80,7 +80,11 @@ export const Projects = () => {
         <>
           Empty Chair Detection Application
           <br />
-          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+          <span
+            style={{
+              textDecoration: "underline",
+            }}
+          >
             MATLAB, Python
           </span>
         </>
@@ -94,7 +98,7 @@ export const Projects = () => {
         <>
           Volone web application
           <br />
-          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+          <span style={{ textDecoration: "underline" }}>
             JavaScript, React, Figma
           </span>
         </>
