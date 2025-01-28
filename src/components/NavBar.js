@@ -44,7 +44,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("home")}
               >
-                Inicio
+                Home
               </Nav.Link>
               <Nav.Link
                 href="#skills"
@@ -53,7 +53,7 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("skills")}
               >
-                Habilidades
+                Technologies
               </Nav.Link>
               <Nav.Link
                 href="#project"
@@ -64,12 +64,12 @@ export const NavBar = () => {
                 }
                 onClick={() => onUpdateActiveLink("Projects")}
               >
-                Experiencia
+                Experiencie
               </Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/julian-vanegas-98a81b159/">
+                <a href="https://www.linkedin.com/in/juliancvg/">
                   <img src={navIcon1} alt="" />
                 </a>
                 <a href="https://www.facebook.com/julian.vanegas.562">
@@ -81,7 +81,7 @@ export const NavBar = () => {
               </div>
               <HashLink to="#connect">
                 <button className="vvd">
-                  <span>Contáctame</span>
+                  <span>Contact me</span>
                 </button>
               </HashLink>
             </span>

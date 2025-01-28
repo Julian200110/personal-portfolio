@@ -19,10 +19,10 @@ export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
+  const [delta, setDelta] = useState(100); // Velocidad constante (en milisegundos)
   const [index, setIndex] = useState(1);
-  const toRotate = ["Ingeniero Mecatrónico", "Desarrollador de software"];
-  const period = 2000;
+  const toRotate = ["Mechatronics Engineer", "Software Developer"];
+  const period = 150;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -43,21 +43,14 @@ export const Banner = () => {
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
+      setTimeout(() => setDelta(period), 0); // Pausa antes de comenzar a borrar
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
+      setDelta(100); // Vuelve a la velocidad fija
     }
   };
 
@@ -73,25 +66,26 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Bienvenido a mi portafolio</span>
+                  <span className="tagline">Welcome to my portfolio</span>
                   <h1>
-                    {`Hola! soy Julian:`}{" "}
+                    {`Hi! I'm Julian:`}{" "}
                     <span
                       className="txt-rotate"
-                      dataPeriod="1000"
-                      data-rotate='[ "Ingeniero Mecatrónico", "Desarrollador de software"] ]'
+                      dataPeriod="100"
+                      data-rotate='["Mechatronics Engineer", "Software Developer"]'
                     >
                       <span className="wrap">{text}</span>
                     </span>
                   </h1>
-                  <p>
-                    Soy una persona comprometida y con una gran capacidad de
-                    aprendizaje por cuenta propia. Mi interés y entusiasmo se
-                    orientan hacia el desarrollo de software, especialmente en
-                    el ámbito del front-end.
+                  <p style={{ textAlign: "justify" }}>
+                    Mechatronics engineer passionate about continuous learning
+                    and committed to delivering high-quality results. I have
+                    developed strong self-learning abilities, which allow me to
+                    quickly adapt to new technologies and thrive in dynamic
+                    environments.
                   </p>
                   <button onClick={handleDownload}>
-                    Descarga mi CV
+                    Download my CV
                     <ArrowRightCircle size={25} />
                   </button>
                 </div>

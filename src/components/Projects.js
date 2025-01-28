@@ -8,9 +8,10 @@ import projImg5 from "../assets/img/IA.jpeg";
 import projImg6 from "../assets/img/volone.png";
 import umng from "../assets/img/umng.jpg";
 import ONE from "../assets/img/ONE.jpg";
-import UDEA from "../assets/img/UDEA.jpg";
+import UDEA from "../assets/img/UDEA.png";
+import cymetria from "../assets/img/cymetria.png";
 import facti from "../assets/img/facti.png";
-import workana from "../assets/img/workana.jpg";
+import slb from "../assets/img/slb.jpg";
 import standardsalud from "../assets/img/standardsalud.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -19,35 +20,87 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
   const projects = [
     {
-      title: "Calculadora",
-      description: "Desarrollada en javascript con framework REACT",
+      title: (
+        <>
+          Weed-Removing Robot for Vegetable Gardens
+          <br />
+          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+            C, Dart, MATLAB, Solidworks
+          </span>
+        </>
+      ),
+      description:
+        "Implemented AI for weed identification via camera vision, designed durable mechanical components for various terrains, developed tools for weed removal without damaging crops, and enabled remote control operation using an ESP32 board and a Flutter app.",
       imgUrl: projImg1,
     },
     {
-      title: "Planta de cerveza",
-      description: "Diseñada en unity conectada a PLC S7-1500",
+      title: (
+        <>
+          Brewery Plant Simulation
+          <br />
+          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+            C, Javascript, React, Node.js
+          </span>
+        </>
+      ),
+      description:
+        "Developed a brewery simulation in Unity, integrated with Siemens S7-1500 PLC for real-time control, enabling interaction between virtual and physical systems and enhancing automation efficiency.",
       imgUrl: projImg2,
     },
     {
-      title: "Clon pagina de testimonios freecodecamo",
-      description: "Desarrollado en javascript con framework REACT",
+      title: (
+        <>
+          Habidd web application
+          <br />
+          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+            JavaScript, React, Figma
+          </span>
+        </>
+      ),
+      description:
+        "Development of a web application distributed to healthcare centers, such as dental clinics, for appointment scheduling and management of patient records with specialized modules.",
       imgUrl: projImg3,
     },
     {
-      title: "Banda transportadora",
+      title: (
+        <>
+          Conveyor Belt System
+          <br />
+          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+            C, Unity, TIA PORTAL
+          </span>
+        </>
+      ),
       description:
-        "Desarrollada con arduino conectada aun servidor con pagina diseñada en REACT y NEXTJS",
+        "Developed with Arduino, integrated with a server for remote monitoring, and a web interface using React and Next.js for real-time data visualization, enabling control and supervision of the conveyor belt through the web platform.",
       imgUrl: projImg4,
     },
     {
-      title: "Detección de sillas vacias",
+      title: (
+        <>
+          Empty Chair Detection Application
+          <br />
+          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+            MATLAB, Python
+          </span>
+        </>
+      ),
       description:
-        "Algortimo de Inteligencia Artifical usando entrenamiento de red convolucional por regiones desarrollado en MATLAB",
+        "Developed an Artificial Intelligence algorithm using a region-based convolutional neural network (R-CNN) trained in MATLAB.",
       imgUrl: projImg5,
     },
     {
-      title: "Contador de Clicks",
-      description: "Desarrollado en javascript con framework REACT",
+      title: (
+        <>
+          Volone web application
+          <br />
+          <span style={{ textDecoration: "underline", fontSize: "15px" }}>
+            JavaScript, React, Figma
+          </span>
+        </>
+      ),
+      description:
+        "Web application for digital menus in restaurants, with an order system, purchases, payments, and dish information, combining artificial intelligence.",
       imgUrl: projImg6,
     },
   ];
@@ -55,45 +108,49 @@ export const Projects = () => {
   const Estudios = [
     {
       title: "Universidad Militar Nueva Granada",
-      description: "Ingenieria mecatronica",
-      description2: "2019 - Presente",
+      description: "Mechatronics Engineering",
+      description2: "Jan. 2019 - Apr. 2025",
       imgUrl: umng,
     },
     {
       title: "Oracle Next Education",
       description:
-        "Formacion Principiante en Programacion / Formacion Front End / Formacion React",
-      description2: "Mayo 2023 - Presente",
+        "Beginner Programming Training / Front End Training / React Training",
+      description2: "May. 2023 - Dec. 2023",
       imgUrl: ONE,
     },
     {
       title: "Universidad de Antioquia",
       description:
-        "Programa de Formación Habilidades en Programación con énfasis en Desarrollo de Aplicaciones Móviles",
-      description2: "Mayo 2021 - Diciembre 2021",
+        " Programming skills training program with emphasis on mobile application development",
+      description2: "May. 2021 - Dec. 2021",
       imgUrl: UDEA,
+    },
+    {
+      title: "Cymetria",
+      description: "Cloud computing",
+      description2: "Sep. 2024 - Dec. 2024",
+      imgUrl: cymetria,
     },
   ];
 
   const Trabajos = [
     {
-      title: "Fundación Artística y Cultural Talentos",
-      description:
-        "Mantenimiento y actualización pagina web WordPress HTML/CSS/PHP",
-      description2: "2020 - Presente",
+      title: "Fundación Artística y Cultural Talentos - Freelancer",
+      description: "Website Administrator",
+      description2: "Jun. 2020 - Present",
       imgUrl: facti,
     },
     {
-      title: "Freelancer",
-      description:
-        "Desarrollo de proyectos freelance en lenguajes como Python/JavaScript/Java",
-      description2: "Junio 2023 - Presente",
-      imgUrl: workana,
+      title: "SLB",
+      description: "Engineering Intern",
+      description2: "Dec. 2023 - Dec. 2024",
+      imgUrl: slb,
     },
     {
       title: "Standard Salud",
-      description: "Desarrollador front end JavaScript/React",
-      description2: "Agosto 2023 - Presente",
+      description: " Front End web developer",
+      description2: "Sep. 2023 - Jan. 2025",
       imgUrl: standardsalud,
     },
   ];
@@ -110,7 +167,7 @@ export const Projects = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>EXPERIENCIA</h2>
+                  <h2>EXPERIENCIE</h2>
                   <p></p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav
@@ -119,15 +176,13 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Proyectos</Nav.Link>
+                        <Nav.Link eventKey="first">Projects</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Estudios</Nav.Link>
+                        <Nav.Link eventKey="second">Education</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">
-                          Experiencia Laboral
-                        </Nav.Link>
+                        <Nav.Link eventKey="third">Experiencie</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content
@@ -165,7 +220,6 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
 };

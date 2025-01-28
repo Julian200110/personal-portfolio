@@ -14,7 +14,7 @@ export const Contact = () => {
     message: "",
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
-  const [buttonText, setButtonText] = useState("Enviar");
+  const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
@@ -26,7 +26,7 @@ export const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setButtonText("Enviando...");
+    setButtonText("Sending...");
 
     // Configuración de EmailJS
     const serviceID = "service_7a55ghb";
@@ -43,13 +43,13 @@ export const Contact = () => {
       setButtonText("Enviar");
       setFormDetails(formInitialDetails);
       if (response.status === 200) {
-        setStatus({ success: true, message: "Correo enviado exitosamente" });
+        setStatus({ success: true, message: "Email sent successfully" });
       }
     } catch (error) {
-      console.error("Error al enviar el correo:", error);
+      console.error("Error sending the email:", error);
       setStatus({
         success: false,
-        message: "Algo salió mal. Intenta de nuevo.",
+        message: "Something went wrong. Please try again.",
       });
     }
   };
@@ -79,14 +79,14 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <h2>Deja tu información</h2>
+                  <h2>Provide your information</h2>
                   <form onSubmit={handleSubmit}>
                     <Row>
                       <Col size={12} sm={6} className="px-1">
                         <input
                           type="text"
                           value={formDetails.firstName}
-                          placeholder="Primer Nombre"
+                          placeholder="First Name"
                           onChange={(e) =>
                             onFormUpdate("firstName", e.target.value)
                           }
@@ -96,7 +96,7 @@ export const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.lastName}
-                          placeholder="Segundo Nombre"
+                          placeholder="Last Name"
                           onChange={(e) =>
                             onFormUpdate("lastName", e.target.value)
                           }
@@ -106,7 +106,7 @@ export const Contact = () => {
                         <input
                           type="email"
                           value={formDetails.email}
-                          placeholder="Correo electronico"
+                          placeholder="Email"
                           onChange={(e) =>
                             onFormUpdate("email", e.target.value)
                           }
@@ -116,7 +116,7 @@ export const Contact = () => {
                         <input
                           type="tel"
                           value={formDetails.phone}
-                          placeholder="Numero telefonico"
+                          placeholder="Phone Number"
                           onChange={(e) =>
                             onFormUpdate("phone", e.target.value)
                           }
@@ -126,7 +126,7 @@ export const Contact = () => {
                         <textarea
                           rows="6"
                           value={formDetails.message}
-                          placeholder="Deja tu mensaje"
+                          placeholder="Message"
                           onChange={(e) =>
                             onFormUpdate("message", e.target.value)
                           }
