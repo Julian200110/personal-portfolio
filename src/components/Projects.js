@@ -22,34 +22,6 @@ export const Projects = () => {
     {
       title: (
         <>
-          Weed-Removing Robot for Vegetable Gardens
-          <br />
-          <span style={{ textDecoration: "underline" }}>
-            C, Dart, MATLAB, Solidworks
-          </span>
-        </>
-      ),
-      description:
-        "Implemented AI for weed identification via camera vision, designed durable mechanical components for various terrains, developed tools for weed removal without damaging crops, and enabled remote control operation using an ESP32 board and a Flutter app.",
-      imgUrl: projImg1,
-    },
-    {
-      title: (
-        <>
-          Brewery Plant Simulation
-          <br />
-          <span style={{ textDecoration: "underline" }}>
-            C, Javascript, React, Node.js
-          </span>
-        </>
-      ),
-      description:
-        "Developed a brewery simulation in Unity, integrated with Siemens S7-1500 PLC for real-time control, enabling interaction between virtual and physical systems and enhancing automation efficiency.",
-      imgUrl: projImg2,
-    },
-    {
-      title: (
-        <>
           Habidd web application
           <br />
           <span style={{ textDecoration: "underline" }}>
@@ -60,20 +32,6 @@ export const Projects = () => {
       description:
         "Development of a web application distributed to healthcare centers, such as dental clinics, for appointment scheduling and management of patient records with specialized modules.",
       imgUrl: projImg3,
-    },
-    {
-      title: (
-        <>
-          Conveyor Belt System
-          <br />
-          <span style={{ textDecoration: "underline" }}>
-            C, Unity, TIA PORTAL
-          </span>
-        </>
-      ),
-      description:
-        "Developed with Arduino, integrated with a server for remote monitoring, and a web interface using React and Next.js for real-time data visualization, enabling control and supervision of the conveyor belt through the web platform.",
-      imgUrl: projImg4,
     },
     {
       title: (
@@ -93,6 +51,21 @@ export const Projects = () => {
         "Developed an Artificial Intelligence algorithm using a region-based convolutional neural network (R-CNN) trained in MATLAB.",
       imgUrl: projImg5,
     },
+
+    {
+      title: (
+        <>
+          Brewery Plant Simulation
+          <br />
+          <span style={{ textDecoration: "underline" }}>
+            C, Javascript, React, Node.js
+          </span>
+        </>
+      ),
+      description:
+        "Developed a brewery simulation in Unity, integrated with Siemens S7-1500 PLC for real-time control, enabling interaction between virtual and physical systems and enhancing automation efficiency.",
+      imgUrl: projImg2,
+    },
     {
       title: (
         <>
@@ -106,6 +79,34 @@ export const Projects = () => {
       description:
         "Web application for digital menus in restaurants, with an order system, purchases, payments, and dish information, combining artificial intelligence.",
       imgUrl: projImg6,
+    },
+    {
+      title: (
+        <>
+          Conveyor Belt System
+          <br />
+          <span style={{ textDecoration: "underline" }}>
+            C, Unity, TIA PORTAL
+          </span>
+        </>
+      ),
+      description:
+        "Developed with Arduino, integrated with a server for remote monitoring, and a web interface using React and Next.js for real-time data visualization, enabling control and supervision of the conveyor belt through the web platform.",
+      imgUrl: projImg4,
+    },
+    {
+      title: (
+        <>
+          Weed-Removing Robot for Vegetable Gardens
+          <br />
+          <span style={{ textDecoration: "underline" }}>
+            C, Dart, MATLAB, Solidworks
+          </span>
+        </>
+      ),
+      description:
+        "Implemented AI for weed identification via camera vision, designed durable mechanical components for various terrains, developed tools for weed removal without damaging crops, and enabled remote control operation using an ESP32 board and a Flutter app.",
+      imgUrl: projImg1,
     },
   ];
 
