@@ -11,6 +11,7 @@ import ONE from "../assets/img/ONE.jpg";
 import UDEA from "../assets/img/UDEA.png";
 import cymetria from "../assets/img/cymetria.png";
 import facti from "../assets/img/facti.png";
+import weibook from "../assets/img/weibook.png";
 import slb from "../assets/img/slb.jpg";
 import standardsalud from "../assets/img/standardsalud.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
@@ -140,6 +141,12 @@ export const Projects = () => {
   ];
 
   const Trabajos = [
+    {
+      title: "Weibook",
+      description: " Full stack developer",
+      description2: "Mar. 2025 - Present",
+      imgUrl: weibook,
+    },
     {
       title: "Fundación Artística y Cultural Talentos - Freelancer",
       description: "Website Administrator",
