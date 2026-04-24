@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo, useCallback } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/custom.png";
 import { ArrowRightCircle } from "react-bootstrap-icons";
@@ -20,21 +20,13 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(100); // Velocidad constante (en milisegundos)
-  const [index, setIndex] = useState(1);
-  const toRotate = ["Mechatronics Engineer", "Software Developer"];
+  const toRotate = useMemo(
+    () => ["Mechatronics Engineer", "Software Developer"],
+    [],
+  );
   const period = 150;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
+  const tick = useCallback(() => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -49,10 +41,19 @@ export const Banner = () => {
     } else if (isDeleting && updatedText === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
       setDelta(100); // Vuelve a la velocidad fija
     }
-  };
+  }, [isDeleting, loopNum, text, toRotate, period]);
+
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [tick, delta]);
 
   return (
     <section className="banner" id="home">
@@ -100,7 +101,10 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                 >
-                  <img src={headerImg} alt="Header Img" />
+                  <img
+                    src={headerImg}
+                    alt="Ilustracion principal del portafolio"
+                  />
                 </div>
               )}
             </TrackVisibility>
