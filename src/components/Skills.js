@@ -13,9 +13,6 @@ import AWS from "../assets/img/amazon-web-services.png";
 import BI from "../assets/img/BI.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
@@ -52,55 +49,55 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={html} alt="Image" />
+                  <img src={html} alt="HTML" />
                   <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={css} alt="Image" />
+                  <img src={css} alt="CSS" />
                   <h5>CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={javascript} alt="Image" />
+                  <img src={javascript} alt="JavaScript" />
                   <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={vue} alt="Image" />
+                  <img src={vue} alt="Vue" />
                   <h5>Vue</h5>
                 </div>
                 <div className="item">
-                  <img src={angular} alt="Image" />
+                  <img src={angular} alt="Angular" />
                   <h5>Angular</h5>
                 </div>
                 <div className="item">
-                  <img src={react} alt="Image" />
+                  <img src={react} alt="React" />
                   <h5>React</h5>
                 </div>
                 <div className="item">
-                  <img src={Python} alt="Image" />
+                  <img src={Python} alt="Python" />
                   <h5>Python</h5>
                 </div>
                 <div className="item">
-                  <img src={java} alt="Image" />
+                  <img src={java} alt="Java" />
                   <h5>Java</h5>
                 </div>
                 <div className="item">
-                  <img src={mongo} alt="Image" />
+                  <img src={mongo} alt="MongoDB" />
                   <h5>mongoDB</h5>
                 </div>
                 <div className="item">
-                  <img src={mysql} alt="Image" />
+                  <img src={mysql} alt="MySQL" />
                   <h5>Mysql</h5>
                 </div>
                 <div className="item">
-                  <img src={AWS} alt="Image" />
+                  <img src={AWS} alt="AWS" />
                   <h5>AWS</h5>
                 </div>
                 <div className="item">
-                  <img src={c} alt="Image" />
+                  <img src={c} alt="C++" />
                   <h5>c++</h5>
                 </div>
                 <div className="item">
-                  <img src={BI} alt="Image" />
+                  <img src={BI} alt="Power BI" />
                   <h5>Power BI</h5>
                 </div>
               </Carousel>
