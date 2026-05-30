@@ -144,13 +144,13 @@ export const Projects = () => {
     {
       title: "Weibook",
       description: " Full stack developer",
-      description2: "Mar. 2025 - Present",
+      description2: "Mar. 2025 - Apr. 2026",
       imgUrl: weibook,
     },
     {
       title: "Fundación Artística y Cultural Talentos - Freelancer",
       description: "Website Administrator",
-      description2: "Jun. 2020 - Present",
+      description2: "Jun. 2020 - Jan. 2026",
       imgUrl: facti,
     },
     {
