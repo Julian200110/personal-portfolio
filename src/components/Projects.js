@@ -149,7 +149,7 @@ export const Projects = () => {
     },
     {
       title: "Fundación Artística y Cultural Talentos - Freelancer",
-      description: "Website Administrator",
+      description: "Software Developer & Systems Administrator",
       description2: "Jun. 2020 - Jan. 2026",
       imgUrl: facti,
     },
