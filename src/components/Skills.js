@@ -9,6 +9,7 @@ import java from "../assets/img/java.png";
 import mongo from "../assets/img/mongo-db.png";
 import mysql from "../assets/img/mysql.png";
 import c from "../assets/img/c-language.png";
+import csharp from "../assets/img/c-sharp.png";
 import AWS from "../assets/img/amazon-web-services.png";
 import BI from "../assets/img/BI.png";
 import Carousel from "react-multi-carousel";
@@ -95,6 +96,10 @@ export const Skills = () => {
                 <div className="item">
                   <img src={c} alt="C++" />
                   <h5>c++</h5>
+                </div>
+                <div className="item">
+                  <img src={csharp} alt="Csharp" />
+                  <h5>c#</h5>
                 </div>
                 <div className="item">
                   <img src={BI} alt="Power BI" />
