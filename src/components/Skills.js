@@ -96,18 +96,6 @@ export const Skills = () => {
                   <img src={AWS} alt="AWS" />
                   <h5>AWS</h5>
                 </div>
-                <div className="item">
-                  <img src={c} alt="C++" />
-                  <h5>c++</h5>
-                </div>
-                <div className="item">
-                  <img src={csharp} alt="Csharp" />
-                  <h5>c#</h5>
-                </div>
-                <div className="item">
-                  <img src={BI} alt="Power BI" />
-                  <h5>Power BI</h5>
-                </div>
                  <div className="item">
                   <img src={claude} alt="Claude" />
                   <h5>Claude</h5>
@@ -120,6 +108,17 @@ export const Skills = () => {
                   <img src={gemini} alt="gemini" />
                   <h5>Gemini</h5>
                   </div>
+                <div className="item">
+                  <img src={c} alt="C++" />
+                  <h5>c++</h5>
+                </div>
+                <div className="item">
+                  <img src={csharp} alt="Csharp" />
+                  <h5>c#</h5>
+                </div>
+                <div className="item">
+                  <img src={BI} alt="Power BI" />
+                  <h5>Power BI</h5>
                 </div>
               </Carousel>
             </div>
