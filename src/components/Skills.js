@@ -12,6 +12,9 @@ import c from "../assets/img/c-language.png";
 import csharp from "../assets/img/c-sharp.png";
 import AWS from "../assets/img/amazon-web-services.png";
 import BI from "../assets/img/BI.png";
+import claude from "../assets/img/claude.png";
+import chatgpt from "../assets/img/chatgpt.png";
+import gemini from "../assets/img/gemini.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -104,6 +107,19 @@ export const Skills = () => {
                 <div className="item">
                   <img src={BI} alt="Power BI" />
                   <h5>Power BI</h5>
+                </div>
+                 <div className="item">
+                  <img src={claude} alt="Claude" />
+                  <h5>Claude</h5>
+                </div>
+                  <div className="item">
+                  <img src={chatgpt} alt="openAI" />
+                  <h5>openAI</h5>
+                  </div>
+                 <div className="item">
+                  <img src={gemini} alt="gemini" />
+                  <h5>Gemini</h5>
+                  </div>
                 </div>
               </Carousel>
             </div>
