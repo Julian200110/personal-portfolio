@@ -85,10 +85,10 @@ export const Banner = () => {
                     quickly adapt to new technologies and thrive in dynamic
                     environments.
                   </p>
-                  <button onClick={handleDownload}>
-                    Download my CV
-                    <ArrowRightCircle size={25} />
-                  </button>
+     //             <button onClick={handleDownload}>
+     //             Download my CV
+    //                <ArrowRightCircle size={25} />
+      //            </button>
                 </div>
               )}
             </TrackVisibility>
